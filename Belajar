@@ -1,1 +1,176 @@
 
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rumpopin Bimbel | Belajar Jadi Seru</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: Arial, sans-serif;
+      color: #193047;
+      background: #f7fbff;
+      line-height: 1.6;
+    }
+    header {
+      background: white;
+      padding: 16px 7%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+      flex-wrap: wrap;
+      box-shadow: 0 2px 12px #16324f12;
+    }
+    .logo { font-size: 23px; font-weight: 800; color: #176bce; }
+    nav { display: flex; gap: 18px; flex-wrap: wrap; }
+    nav a { text-decoration: none; color: #193047; font-weight: 600; }
+    .hero {
+      padding: 85px 7%;
+      background: linear-gradient(130deg, #e4f3ff, #fff3dc);
+      display: flex;
+      align-items: center;
+      gap: 35px;
+      flex-wrap: wrap;
+    }
+    .hero > div { flex: 1 1 280px; }
+    .hero h1 { font-size: clamp(35px, 6vw, 56px); line-height: 1.15; }
+    .hero h1 span { color: #176bce; }
+    .hero p { margin: 20px 0; color: #50657a; font-size: 17px; }
+    .hero-art { text-align: center; font-size: 110px; }
+    .btn {
+      display: inline-block;
+      background: #176bce;
+      color: white;
+      padding: 13px 22px;
+      border-radius: 12px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    section { padding: 65px 7%; }
+    .heading { text-align: center; margin-bottom: 32px; }
+    .heading h2 { font-size: 30px; }
+    .heading p { color: #64748b; }
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      padding: 25px;
+      border-radius: 18px;
+      background: white;
+      box-shadow: 0 5px 22px #1930470c;
+    }
+    .card .emoji { font-size: 40px; }
+    .card h3 { margin: 12px 0 7px; }
+    .about { background: #eaf5ff; text-align: center; }
+    .about p { max-width: 650px; margin: 12px auto 0; }
+    .join { text-align: center; }
+    footer {
+      background: #153452;
+      color: white;
+      text-align: center;
+      padding: 25px 7%;
+    }
+    footer p { color: #d4e5f5; }
+    @media (max-width: 600px) {
+      header { justify-content: center; }
+      nav { justify-content: center; gap: 12px; }
+      .hero { padding-top: 55px; padding-bottom: 55px; }
+      .hero-art { width: 100%; font-size: 80px; }
+      section { padding: 48px 6%; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">📚 Rumpopin Bimbel</div>
+    <nav>
+      <a href="#beranda">Beranda</a>
+      <a href="#program">Program</a>
+      <a href="#tentang">Tentang</a>
+      <a href="#daftar">Daftar</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="beranda">
+      <div>
+        <h1>Belajar Seru,<br><span>Prestasi Maju!</span></h1>
+        <p>
+          Selamat datang di Rumpopin Bimbel.
+          Teman belajar untuk membantu siswa lebih
+          percaya diri, memahami pelajaran, dan meraih prestasi.
+        </p>
+        <a class="btn" href="#daftar">Mulai Belajar →</a>
+      </div>
+      <div class="hero-art">🎓📖✨</div>
+    </section>
+
+    <section id="program">
+      <div class="heading">
+        <h2>Program Belajar</h2>
+        <p>Pilih program yang sesuai dengan kebutuhanmu.</p>
+      </div>
+      <div class="cards">
+        <article class="card">
+          <div class="emoji">✏️</div>
+          <h3>Bimbingan SD</h3>
+          <p>Belajar dasar membaca, menulis, berhitung, dan pelajaran sekolah.</p>
+        </article>
+        <article class="card">
+          <div class="emoji">📘</div>
+          <h3>Bimbingan SMP</h3>
+          <p>Memahami materi sekolah, latihan soal, dan persiapan ujian.</p>
+        </article>
+        <article class="card">
+          <div class="emoji">🚀</div>
+          <h3>Bimbingan SMA</h3>
+          <p>Pendalaman materi dan latihan soal sesuai kebutuhan siswa.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="about" id="tentang">
+      <div class="heading">
+        <h2>Tentang Rumpopin</h2>
+      </div>
+      <p>
+        Rumpopin Bimbel hadir sebagai teman belajar yang
+        mendukung siswa untuk belajar dengan nyaman,
+        memahami materi secara bertahap, dan mengembangkan
+        kemampuan terbaiknya.
+      </p>
+    </section>
+
+    <section class="join" id="daftar">
+      <div class="heading">
+        <h2>Yuk, Bergabung!</h2>
+        <p>Hubungi kami untuk informasi program dan pendaftaran siswa baru.</p>
+      </div>
+      <a class="btn" id="wa" href="https://wa.me/"
+         target="_blank" rel="noopener">
+        💬 Daftar via WhatsApp
+      </a>
+      <p style="margin-top:12px;font-size:13px;color:#64748b">
+        Nomor WhatsApp pengelola perlu diatur terlebih dahulu.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <strong>📚 Rumpopin Bimbel</strong>
+    <p>Belajar hari ini, raih prestasi esok hari.</p>
+    <p>© <span id="year"></span> Rumpopin Bimbel</p>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent =
+      new Date().getFullYear();
+  </script>
+</body>
+</html>
+
